@@ -12,14 +12,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: setup python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '2.x'
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           registry-url: 'https://npm.pkg.github.com'
           scope: 'phyzical'
       - name: Install dependencies
