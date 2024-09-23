@@ -1,10 +1,10 @@
 {
-  "name": "intermock-ssg",
-  "version": "1.0.1",
+  "name": "@phyzical/intermock",
+  "version": "1.0.2",
   "description": "Automatically create mock objects and JSON from TypeScript interfaces via Faker",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SolidStateGroup/intermock"
+    "url": "git+https://github.com/phyzical/intermock.git"
   },
   "bin": {
     "intermock": "build/src/cli/index.js"
@@ -92,6 +92,9 @@
       "html"
     ],
     "all": true
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@phyzical"
   },
   "author": "Rashila Pandey <rashila@solidstategroup.com>",
   "license": "Apache"
